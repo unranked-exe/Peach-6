@@ -1,0 +1,12 @@
+{% extends 'base_content.html' %}
+{% block content %}
+<div class="container my-5">
+    <h1>Profile of {{ user.full_name }}</h1>
+    <p>Username: {{ user.username }}</p>
+    <!--The next line of code resulted in an error when running the tests
+    <p>Gravatar URL: {{ user.gravatar }}</p>
+    -->
+    <img src="{{ user.gravatar|safe }}" alt="{{ user.full_name }}'s Gravatar" class="rounded-circle">
+    <!--the line above was generated using AI, as I could not find a way to fix the bug-->
+</div>
+{% endblock %}
