@@ -97,6 +97,9 @@ class PasswordForm(NewPasswordMixin):
         super().__init__(**kwargs)
         self.user = user
 
+        # Force the desired field order
+        self.order_fields(['password', 'new_password', 'password_confirmation'])
+
     def clean(self):
         """
         Validate the current and new password fields.
