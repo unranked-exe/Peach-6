@@ -1,12 +1,12 @@
-# Team *enter team name here* Small Group project
+# Team *Peach-6* Small Group project
 
 ## Team members
 The members of the team are:
-- *enter full name 1 here*
-- *enter full name 2 here*
-- *enter full name 3 here*
-- *enter full name 4 here*
-- *enter full name 5 here (or delete if not applicable)*
+- *Calin Teodor Bulata*
+- *Hafsa Tifow*
+- *Ozgur Dorunay*
+- *Chris Lukose Mark*
+- *Qozfa Hussain*
 
 ## Project structure
 The project is called `recipify`.  It currently consists of a single app `recipes`.
