@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import MinValueValidator, MaxValueValidator
 from .user import User
 
 class Recipe(models.Model):
@@ -9,7 +10,7 @@ class Recipe(models.Model):
     instructions = models.TextField(blank=False)
     date_created = models.DateTimeField(auto_now_add=True)
     difficulty_level = models.CharField(max_length=50, blank=False)
-    preparation_time_mins = models.IntegerField(help_text="Preparation time in minutes", blank=False)
+    preparation_time_mins = models.IntegerField(help_text="Preparation time in minutes", blank=False, validators=[MinValueValidator(1), MaxValueValidator(1440)])
 
 #Sample init 
 # user1 = User.objects.first()
