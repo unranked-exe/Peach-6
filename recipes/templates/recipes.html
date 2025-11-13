@@ -1,0 +1,10 @@
+{% extends 'base_content.html' %}
+{% block content %}
+<h1>Recipes</h1>
+<p>Welcome to the recipe page! Here you can find a variety of delicious recipes to try out.</p>
+<ul>
+    {% for recipe in recipes %}
+    <li>{{ recipe.name }} - {{ recipe.author }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

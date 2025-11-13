@@ -11,7 +11,9 @@ class Recipe(models.Model):
     difficulty_level = models.CharField(max_length=50)
     preparation_time_mins = models.IntegerField(help_text="Preparation time in minutes")
 
-#Sample init recipe1 = Recipe(name = "Lasagna", author=user1,ingredients = "Ingredients", instructions = "Sample Instructions", difficulty_level = "Easy", preparation_time_mins = 30)
-#user1 = User.objects.first
+#Sample init 
+# user1 = User.objects.first()
+# recipe1 = Recipe(name = "Lasagna", author=user1,ingredients = "Ingredients", instructions = "Sample Instructions", difficulty_level = "Easy", preparation_time_mins = 30)
+
     def __str__(self):
         return f"{self.name} by {self.author.username}"
