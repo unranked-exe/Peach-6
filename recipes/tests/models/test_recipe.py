@@ -69,6 +69,21 @@ class RecipeTestCase(TestCase):
         self.recipe.preparation_time_mins = -10
         self._assert_recipe_is_invalid()
 
+    def test_preparation_time_mins_cannot_be_zero(self):
+        self.recipe.preparation_time_mins = 0
+        self._assert_recipe_is_invalid()
+    
+    def test_preparation_time_mins_can_be_one(self):
+        self.recipe.preparation_time_mins = 1
+        self._assert_recipe_is_valid()
+    
+    def test_preparation_time_mins_can_be_maximum_value(self):
+        self.recipe.preparation_time_mins = 1440
+        self._assert_recipe_is_valid()
+    
+    def test_preparation_time_mins_cannot_exceed_maximum_value(self):
+        self.recipe.preparation_time_mins = 1441
+        self._assert_recipe_is_invalid()
 
     def _assert_recipe_is_valid(self):
         try:
