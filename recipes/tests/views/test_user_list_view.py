@@ -20,7 +20,7 @@ class UserListViewTestCase(TestCase):
         response = self.client.get(self.url)
         self.assertRedirects(response, redirect_url, status_code=302, target_status_code=200)
 
-    def test_get_suer_list_succesful(self):
+    def test_get_user_list_succesful(self):
         self.client.login(username = self.user.username, password = 'Password123')
         response = self.client.get(self.url)
 
