@@ -6,6 +6,9 @@
   border-radius: 0px;
 }
 
+body,html, * {
+    font-family: 'Poppins', sans-serif !important;
+}
 
 /*
  * Cover page

@@ -1,11 +1,18 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block body %}
   <div class="container vh-100">
     <div class="row h-100">
       <div class="col-12 my-auto">
-        <div class="card cover-card offset-sm-2 offset-md-4 offset-lg-7">
+        <div class="card cover-card mx-auto">
+          <div class="text-center mb-4">
+            <img src="{% static 'recipe.jpeg' %}"
+                 class="img-fluid rounded"
+                 style="max-width: 250px;"
+                 alt="Login Image">
+          </div>
           <h1 class="cover-heading">Recipify</h1>
-          <p class="cover-text">A recipe sharing app by Team <i>Peach 6 (or revise this home screen as you see fit)</i></p>
+          <p class="cover-text">A recipe sharing app by Peach 6</p>
           <p>
             <a href='{% url 'sign_up' %}' class="btn btn-lg btn-secondary">
               Sign up
