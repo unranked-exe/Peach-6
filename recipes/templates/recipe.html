@@ -1,0 +1,17 @@
+{% extends "base_content.html" %}
+
+{% block title %}
+My Library | Book #{{book.id}}
+{% endblock %}
+
+{% block content %}
+<h1>Recipe #{{recipe.id}}</h1>
+<p><b>Authors</b>: {{recipe.author}}</p>
+<p><b>Publication date</b>: {{recipe.date_created|date:"d M Y"}}</p>
+<p><b>Title</b>: {{recipe.name}}</p>
+<p><b>Ingredients</b>: {{recipe.ingredients}}</p>
+<p><b>Instructions</b>: {{recipe.instructions}}</p>
+<p><b>Difficulty level</b>: {{recipe.difficulty_level}}</p>
+<p><b>Preparation time (mins)</b>: {{recipe.preparation_time_mins}}</p>
+<p><a href="{% url 'list_recipes' %}">Go to list of recipes</a>
+{% endblock %}

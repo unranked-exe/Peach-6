@@ -1,0 +1,15 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 1,
+    "fields": {
+        "name": "Lasagna",
+        "author": 1,
+        "ingredients": "Ingredients",
+        "instructions": "Sample Instructions",
+        "date_created": "2024-06-01T12:00:00Z",
+        "difficulty_level": "Easy",
+        "preparation_time_mins": 30
+    }
+  }
+]
