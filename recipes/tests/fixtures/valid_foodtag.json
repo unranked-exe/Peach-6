@@ -1,0 +1,9 @@
+[
+    {
+        "model": "recipes.foodtag",
+        "pk": 1,
+        "fields": {
+            "tag_name": "Halal"
+        }
+    }
+]

@@ -8,8 +8,7 @@ class FoodTagTestCase(TestCase):
     """Unit tests for the FoodTag model."""
 
     fixtures = [
-        'recipes/tests/fixtures/default_foodtag.json',
-        'recipes/tests/fixtures/other_foodtag.json'
+        'recipes/tests/fixtures/valid_foodtag.json'
     ]
 
     def setUp(self):
